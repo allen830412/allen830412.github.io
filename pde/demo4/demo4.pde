@@ -23,8 +23,9 @@ void draw(){
 
   background(255);
 
-  fill(190);
+  fill(100);
  
+rect(100,100,width/2,height/2);
 
   fill(0);
   text("mouseX : "+mouseX, 20, 30);  
