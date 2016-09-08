@@ -10,8 +10,7 @@ void setup(){
   fill(0);
   background(255);
   ellipseMode(CENTER);
-  MX=mouseX-(width/2);
-  MY=mouseY-(height/2);
+
   
   wave1 = loadImage("wave1.png");
   wave2 = loadImage("wave2.png");
@@ -21,7 +20,8 @@ void setup(){
 
 // Main draw loop
 void draw(){
-
+  MX=mouseX-(width/2);
+  MY=mouseY-(height/2);
   background(255);
 //tint(255,100);
 
