@@ -1,7 +1,7 @@
 /* @pjs pauseOnBlur="true"; */
 
 // variable spécifique à ce sketch
-var bubbles = new Array();
+
 
 // Setup the Processing Canvas
 void setup(){
@@ -20,8 +20,8 @@ void draw(){
 
   background(255);
 
-  fill(190);
-
+  fill(0);
+rect(100,100,width/2,height/2);
 
 
   //fill(0);
