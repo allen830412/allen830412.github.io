@@ -15,13 +15,7 @@ void setup(){
   background(255);
   ellipseMode(CENTER);
 
-  // création des bulles
-  for(var i=0; i<80; i++){
-    bubbles.push(new Bubble());
-  }
-}
 
-// Main draw loop
 void draw(){
 
   background(255);
@@ -30,12 +24,12 @@ void draw(){
 
 
 
-  fill(0);
-  text("mouseX : "+mouseX, 20, 30);  
-  text("mouseY : "+mouseY, 20, 50);  
-  text("mousePressed : "+mousePressed, 20, 70);
-  text("width : "+width, 20, 90);
-  text("height : "+height, 20, 110);
+  //fill(0);
+  //text("mouseX : "+mouseX, 20, 30);  
+  //text("mouseY : "+mouseY, 20, 50);  
+  //text("mousePressed : "+mousePressed, 20, 70);
+  //text("width : "+width, 20, 90);
+  //text("height : "+height, 20, 110);
 }
 
 
