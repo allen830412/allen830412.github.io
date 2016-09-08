@@ -13,9 +13,9 @@ void setup(){
   MX=mouseX-(width/2);
   MY=mouseY-(height/2);
   
-  wave1 = loadImage("wave1.png",-50-MX*0.3,-50-MY*0.3,2000,1400);
-  wave2 = loadImage("wave2.png",-50-MX*0.2,-50-MY*0.2,2000,1400);
-  wave3 = loadImage("wave3.png",-50+MX*0.1,-50+MY*0.1,2000,1400);
+  wave1 = loadImage("wave1.png");
+  wave2 = loadImage("wave2.png");
+  wave3 = loadImage("wave3.png");
 
 }
 
@@ -25,9 +25,9 @@ void draw(){
   background(255);
 //tint(255,100);
 
-image(wave1,0,0);
-image(wave2,0,0);
-image(wave3,0,0);
+image(wave1,-50-MX*0.3,-50-MY*0.3,2000,1400);
+image(wave2,-50-MX*0.2,-50-MY*0.2,2000,1400);
+image(wave3,-50+MX*0.1,-50+MY*0.1,2000,1400);
 //fill(100);
  
 welcome();
