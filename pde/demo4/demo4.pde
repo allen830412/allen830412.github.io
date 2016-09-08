@@ -1,9 +1,5 @@
-/* @pjs pauseOnBlur="true"; */
+PImage wave1,wave2,wave3;
 
-// variable spécifique à ce sketch
-var bubbles = new Array();
-
-// Setup the Processing Canvas
 void setup(){
 
   jProcessingJS(this, {fullscreen:true, mouseoverlay:true});
@@ -14,7 +10,9 @@ void setup(){
   fill(0);
   background(255);
   ellipseMode(CENTER);
-  
+  wave1 = loadImage("wave1.png");
+  wave2 = loadImage("wave2.png");
+  wave3 = loadImage("wave3.png");
 
 }
 
@@ -22,8 +20,12 @@ void setup(){
 void draw(){
 
   background(25);
+tint(255,100);
 
-  fill(100);
+image(wave1,0,0);
+image(wave2,0,0);
+image(wave3,0,0);
+//fill(100);
  
 welcome();
 
@@ -35,10 +37,10 @@ welcome();
   //text("height : "+height, 20, 110);
 }
 void welcome(){
-  fill(200);
-rect(width*0.1,height*1,width*0.1,-height*0.8);
-rect(width*0.3,height*1,width*0.1,-height*0.8);
-rect(width*0.5,height*1,width*0.1,-height*0.8);
-rect(width*0.7,height*1,width*0.1,-height*0.8);
+  fill(200,100);
+rect(width*0.13,height*1,width*0.1,-height*0.8);
+rect(width*0.33,height*1,width*0.1,-height*0.8);
+rect(width*0.53,height*1,width*0.1,-height*0.8);
+rect(width*0.73,height*1,width*0.1,-height*0.8);
 
 }
