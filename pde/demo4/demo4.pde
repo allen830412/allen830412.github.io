@@ -8,13 +8,13 @@ void setup(){
 
   jProcessingJS(this, {fullscreen:true, mouseoverlay:true});
   //size(300, 300);
-  
+  smooth();
   frameRate(25);
   noStroke();
   fill(0);
   background(255);
   ellipseMode(CENTER);
-
+  
 
 }
 
@@ -25,7 +25,7 @@ void draw(){
 
   fill(100);
  
-rect(100,100,width/2,height/2);
+welcome();
 
   fill(0);
   text("mouseX : "+mouseX, 20, 30);  
@@ -33,4 +33,8 @@ rect(100,100,width/2,height/2);
   text("mousePressed : "+mousePressed, 20, 70);
   text("width : "+width, 20, 90);
   text("height : "+height, 20, 110);
+}
+void welcome(){
+  fill(200);
+rect(width*0,height*0.2,width*0.8,height*0.1);
 }
