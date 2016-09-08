@@ -21,7 +21,7 @@ void setup(){
 // Main draw loop
 void draw(){
 
-  background(255);
+  background(25);
 
   fill(100);
  
