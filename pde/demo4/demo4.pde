@@ -19,7 +19,7 @@ void setup(){
 // Main draw loop
 void draw(){
 
-  background(25);
+  background(255);
 tint(255,100);
 
 image(wave1,0,0);
