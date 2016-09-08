@@ -27,14 +27,18 @@ void draw(){
  
 welcome();
 
-  fill(0);
-  text("mouseX : "+mouseX, 20, 30);  
-  text("mouseY : "+mouseY, 20, 50);  
-  text("mousePressed : "+mousePressed, 20, 70);
-  text("width : "+width, 20, 90);
-  text("height : "+height, 20, 110);
+  //fill(0);
+  //text("mouseX : "+mouseX, 20, 30);  
+  //text("mouseY : "+mouseY, 20, 50);  
+  //text("mousePressed : "+mousePressed, 20, 70);
+  //text("width : "+width, 20, 90);
+  //text("height : "+height, 20, 110);
 }
 void welcome(){
   fill(200);
 rect(width*0,height*0.2,width*0.8,height*0.1);
+rect(width*0,height*0.4,width*0.8,height*0.1);
+rect(width*0,height*0.6,width*0.8,height*0.1);
+rect(width*0,height*0.8,width*0.8,height*0.1);
+
 }
