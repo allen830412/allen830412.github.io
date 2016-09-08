@@ -20,7 +20,7 @@ void setup(){
 void draw(){
 
   background(255);
-tint(255,100);
+//tint(255,100);
 
 image(wave1,0,0);
 image(wave2,0,0);
