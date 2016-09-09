@@ -1,5 +1,6 @@
 PImage wave1,wave2,wave3;
 float MX,MY;
+float loopC=0;
 void setup(){
 
   jProcessingJS(this, {fullscreen:true, mouseoverlay:true});
@@ -20,13 +21,14 @@ void setup(){
 
 // Main draw loop
 void draw(){
+  loopCounter();
   MX=mouseX-(width/2);
   MY=mouseY-(height/2);
   background(0);
 //tint(0);
 //imageMode(CORNERS);
 //image(wave1,width-1400-MX*0.03,-1000-MY*0.03,2800,4000);
-image(wave2,width-300-MX*0.01,-1000-MY*0.02,600+MX*0.01,4000);
+image(wave2,width-300-MX*0.01-loopC/2,-1000-MY*0.02,600+MX*0.01+loopC,4000);
 //image(wave3,width-1400+MX*0.01,-1500+MY*0.01,2800,4000);
 //fill(100);
  
@@ -46,4 +48,22 @@ rect(width*-0.2+MX*0.01,height*0.33+MY*0.01,width*0.81,height*0.1);
 rect(width*-0.2+MX*0.01,height*0.53+MY*0.01,width*0.81,height*0.1);
 rect(width*-0.2+MX*0.01,height*0.73+MY*0.01,width*0.81,height*0.1);
 
+}
+void loopCounter(){
+int piv=0;
+if(piv==0){
+if(loopC<100){
+loopC=loopC+1;
+}else if(loopC>=100){
+loopC=100;
+piv=1;
+}
+}else if(piv==1){
+if(loopC>0){
+loopC=loopC-1;
+}else if(loopC<=0){
+loopC=0;
+piv=0;
+}
+}
 }
