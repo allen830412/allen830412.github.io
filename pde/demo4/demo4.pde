@@ -41,9 +41,9 @@ welcome();
 }
 void welcome(){
   fill(230,200);
-rect(width*-0.2+MX*0.2,height*0.13+MY*0.2,width*0.81,-height*0.1);
-rect(width*-0.2+MX*0.2,height*0.33+MY*0.2,width*0.81,-height*0.1);
-rect(width*-0.2+MX*0.2,height*0.53+MY*0.2,width*0.81,-height*0.1);
-rect(width*-0.2+MX*0.2,height*0.73+MY*0.2,width*0.81,-height*0.1);
+rect(width*-0.2+MX*0.01,height*0.13+MY*0.01,width*0.81,-height*0.1);
+rect(width*-0.2+MX*0.01,height*0.33+MY*0.01,width*0.81,-height*0.1);
+rect(width*-0.2+MX*0.01,height*0.53+MY*0.01,width*0.81,-height*0.1);
+rect(width*-0.2+MX*0.01,height*0.73+MY*0.01,width*0.81,-height*0.1);
 
 }
