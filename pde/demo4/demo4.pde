@@ -16,8 +16,8 @@ void setup(){
   noStroke();
   background(0);
   ellipseMode(CENTER);
-  zombie = loadFont("ZombieStory.ttf", 32);
-  fifth = loadFont("FilthofIcarus.ttf", 32);
+  zombie = loadFont("ZombieStory.ttf");
+  fifth = loadFont("FilthofIcarus.ttf");
   
   wave1 = loadImage("wave1.png");
   wave2 = loadImage("wave2.png");
@@ -50,7 +50,7 @@ rotate(-loopC/1500);
 welcome();
 fill(255);
 textSize(100);
-text("46",0,0,200,200);
+text("47",0,0,200,200);
   //fill(0);
   //text("mouseX : "+mouseX, 20, 30);  
   //text("mouseY : "+mouseY, 20, 50);  
