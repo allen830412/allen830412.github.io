@@ -22,7 +22,7 @@ void setup(){
 void draw(){
   MX=mouseX-(width/2);
   MY=mouseY-(height/2);
-  background(255);
+  background(0);
 //tint(0);
 
 image(wave1,width-200-MX*0.3,-50-MY*0.3,400,4000);
