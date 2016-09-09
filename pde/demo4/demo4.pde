@@ -47,7 +47,7 @@ rotate(-loopC/1500);
 welcome();
 fill(255);
 textSize(100);
-text("33",0,0,200,200);
+text("34",0,0,200,200);
   //fill(0);
   //text("mouseX : "+mouseX, 20, 30);  
   //text("mouseY : "+mouseY, 20, 50);  
@@ -60,12 +60,28 @@ void welcome(){
   if(mouseX<width*0.2){
     if(mouseY>height*0.13&&mouseY<height*0.23){
     l1=l1+abs(0.5-l1)*0.3;
+    
+    l2=l2-abs(0.25-l2)*0.3;
+    l3=l3-abs(0.25-l3)*0.3;
+    l4=l4-abs(0.25-l4)*0.3;
     }else if(mouseY>height*0.33&&mouseY<height*0.43){
     l2=l2+abs(0.5-l2)*0.3;
+    
+    l1=l1-abs(0.25-l1)*0.3;
+    l3=l3-abs(0.25-l3)*0.3;
+    l4=l4-abs(0.25-l4)*0.3;
     }else if(mouseY>height*0.53&&mouseY<height*0.63){
     l3=l3+abs(0.5-l3)*0.3;
+    
+    l1=l1-abs(0.25-l1)*0.3;
+    l2=l2-abs(0.25-l2)*0.3;
+    l4=l4-abs(0.25-l4)*0.3;
     }else if(mouseY>height*0.73&&mouseY<height*0.83){
     l4=l4+abs(0.5-l4)*0.3;
+    
+    l1=l1-abs(0.25-l1)*0.3;
+    l2=l2-abs(0.25-l2)*0.3;
+    l3=l3-abs(0.25-l3)*0.3;
     }else{
   l1=l1-abs(0.25-l1)*0.3;
   l2=l2-abs(0.25-l2)*0.3;
@@ -78,10 +94,15 @@ void welcome(){
   l3=l3-abs(0.25-l3)*0.3;
   l4=l4-abs(0.25-l4)*0.3;
   }
+  stroke(10);
 rect(width*-0.2+MX*0.01,height*0.13+MY*0.01,width*l1,height*0.1);
+text("About me",width*l1+MX*0.01,height*0.23+MY*0.01);
 rect(width*-0.2+MX*0.01,height*0.33+MY*0.01,width*l2,height*0.1);
+text("Sound",width*l2+MX*0.01,height*0.43+MY*0.01);
 rect(width*-0.2+MX*0.01,height*0.53+MY*0.01,width*l3,height*0.1);
+text("Installations",width*l3+MX*0.01,height*0.63+MY*0.01);
 rect(width*-0.2+MX*0.01,height*0.73+MY*0.01,width*l4,height*0.1);
+text("Contact",width*l4+MX*0.01,height*0.83+MY*0.01);
 
 }
 void loopCounter(){
