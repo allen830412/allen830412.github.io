@@ -1,6 +1,7 @@
 PImage wave1,wave2,wave3;
 float MX,MY;
 float loopC=0;
+int piv=0;
 void setup(){
 
   jProcessingJS(this, {fullscreen:true, mouseoverlay:true});
@@ -52,7 +53,7 @@ rect(width*-0.2+MX*0.01,height*0.73+MY*0.01,width*0.81,height*0.1);
 
 }
 void loopCounter(){
-int piv=0;
+
 if(piv==0){
 if(loopC<=100){
 loopC=loopC+1;
