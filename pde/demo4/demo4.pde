@@ -24,7 +24,7 @@ void draw(){
   MY=mouseY-(height/2);
   background(0);
 //tint(0);
-
+imageMode(CORNERS);
 image(wave1,width-200-MX*0.3,-50-MY*0.3,400,4000);
 image(wave2,width-700-MX*0.2,-100-MY*0.2,1400,4000);
 image(wave3,width-200+MX*0.1,-150+MY*0.1,400,4000);
