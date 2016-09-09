@@ -47,7 +47,7 @@ rotate(-loopC/1500);
 welcome();
 fill(255);
 textSize(100);
-text("36",0,0,200,200);
+text("37",0,0,200,200);
   //fill(0);
   //text("mouseX : "+mouseX, 20, 30);  
   //text("mouseY : "+mouseY, 20, 50);  
@@ -94,6 +94,7 @@ void welcome(){
   l3=l3-abs(0.25-l3)*0.3;
   l4=l4-abs(0.25-l4)*0.3;
   }
+  stroke(10);
   strokeWeight(10);
   textSize(80);
 rect(width*-0.2+MX*0.01,height*0.13+MY*0.01,width*l1,height*0.1);
