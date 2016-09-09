@@ -101,7 +101,7 @@ rect(width*-0.2+MX*0.01,height*0.53+MY*0.01,width*l3,height*0.1);
 rect(width*-0.2+MX*0.01,height*0.73+MY*0.01,width*l4,height*0.1);
 
 stroke(10);
-strokeWeight(10);
+strokeWeight(1);
 textSize(80);
 
 text("About me",width*(l1-0.33)+MX*0.01,height*0.23+MY*0.01);
