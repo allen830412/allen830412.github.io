@@ -46,7 +46,7 @@ rotate(-loopC/1500);
 welcome();
 fill(255);
 textSize(100);
-text("41",0,0,200,200);
+text("42",0,0,200,200);
   //fill(0);
   //text("mouseX : "+mouseX, 20, 30);  
   //text("mouseY : "+mouseY, 20, 50);  
@@ -104,9 +104,9 @@ strokeWeight(1);
 textSize(80);
 
 fill(240);
-text("About me",width*(l1-0.41)+MX*0.01-5,height*0.23+MY*0.01);
+text("About me",width*(l1-0.42)+MX*0.01,height*0.23+MY*0.01);
 fill(10);
-text("About me",width*(l1-0.41)+MX*0.01+1-5,height*0.23+MY*0.01+2);
+text("About me",width*(l1-0.42)+MX*0.01+1,height*0.23+MY*0.01+2);
 
 fill(240);
 text("Sound",width*(l2-0.33)+MX*0.01,height*0.43+MY*0.01);
@@ -114,14 +114,14 @@ fill(10);
 text("Sound",width*(l2-0.33)+MX*0.01+1,height*0.43+MY*0.01+2);
 
 fill(240);
-text("Installations",width*(l3-0.43)+MX*0.01-20,height*0.63+MY*0.01);
+text("Installations",width*(l3-0.53)+MX*0.01-20,height*0.63+MY*0.01);
 fill(10);
-text("Installations",width*(l3-0.43)+MX*0.01+1-20,height*0.63+MY*0.01+2);
+text("Installations",width*(l3-0.53)+MX*0.01+1-20,height*0.63+MY*0.01+2);
 
 fill(240);
-text("Contact",width*(l4-0.33)+MX*0.01-15,height*0.83+MY*0.01);
+text("Contact",width*(l4-0.43)+MX*0.01-15,height*0.83+MY*0.01);
 fill(10);
-text("Contact",width*(l4-0.33)+MX*0.01+1-15,height*0.83+MY*0.01+2);
+text("Contact",width*(l4-0.43)+MX*0.01+1-15,height*0.83+MY*0.01+2);
 
 }
 void loopCounter(){
