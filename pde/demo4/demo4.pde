@@ -3,7 +3,7 @@ float MX,MY;
 float loopC=500;
 float loopC1=0;
 int piv,piv1=0;
-float l1=0.4,l2=0.4,l3=0.4,l4=0.4;
+float l1=0.25,l2=0.25,l3=0.25,l4=0.25;
 void setup(){
 
   jProcessingJS(this, {fullscreen:true, mouseoverlay:true});
@@ -47,7 +47,7 @@ rotate(-loopC/1500);
 welcome();
 fill(255);
 textSize(100);
-text("32",0,0,200,200);
+text("33",0,0,200,200);
   //fill(0);
   //text("mouseX : "+mouseX, 20, 30);  
   //text("mouseY : "+mouseY, 20, 50);  
@@ -59,19 +59,24 @@ void welcome(){
   fill(230,200);
   if(mouseX<width*0.2){
     if(mouseY>height*0.13&&mouseY<height*0.23){
-    l1=l1+abs(0.8-l1)*0.3;
+    l1=l1+abs(0.5-l1)*0.3;
     }else if(mouseY>height*0.33&&mouseY<height*0.43){
-    l2=l2+abs(0.8-l2)*0.3;
+    l2=l2+abs(0.5-l2)*0.3;
     }else if(mouseY>height*0.53&&mouseY<height*0.63){
-    l3=l3+abs(0.8-l3)*0.3;
+    l3=l3+abs(0.5-l3)*0.3;
     }else if(mouseY>height*0.73&&mouseY<height*0.83){
-    l4=l4+abs(0.8-l4)*0.3;
-    }
+    l4=l4+abs(0.5-l4)*0.3;
+    }else{
+  l1=l1-abs(0.25-l1)*0.3;
+  l2=l2-abs(0.25-l2)*0.3;
+  l3=l3-abs(0.25-l3)*0.3;
+  l4=l4-abs(0.25-l4)*0.3;
+  }
   }else{
-  l1=l1-abs(0.4-l1)*0.3;
-  l2=l2-abs(0.4-l2)*0.3;
-  l3=l3-abs(0.4-l3)*0.3;
-  l4=l4-abs(0.4-l4)*0.3;
+  l1=l1-abs(0.25-l1)*0.3;
+  l2=l2-abs(0.25-l2)*0.3;
+  l3=l3-abs(0.25-l3)*0.3;
+  l4=l4-abs(0.25-l4)*0.3;
   }
 rect(width*-0.2+MX*0.01,height*0.13+MY*0.01,width*l1,height*0.1);
 rect(width*-0.2+MX*0.01,height*0.33+MY*0.01,width*l2,height*0.1);
