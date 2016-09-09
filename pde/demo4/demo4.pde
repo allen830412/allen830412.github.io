@@ -25,9 +25,9 @@ void draw(){
   background(0);
 //tint(0);
 //imageMode(CORNERS);
-image(wave1,width-200-MX*0.3,-50-MY*0.3,400,3000);
-image(wave2,width-700-MX*0.2,-100-MY*0.2,1400,3000);
-image(wave3,width-200+MX*0.1,-150+MY*0.1,400,3000);
+image(wave1,width-200-MX*0.3,-1000-MY*0.3,2800,4000);
+image(wave2,width-700-MX*0.2,-1000-MY*0.2,2800,4000);
+image(wave3,width-200+MX*0.1,-1500+MY*0.1,2800,4000);
 //fill(100);
  
 welcome();
