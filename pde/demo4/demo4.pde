@@ -47,7 +47,7 @@ rotate(-loopC/1500);
 welcome();
 fill(255);
 textSize(100);
-text("35",0,0,200,200);
+text("36",0,0,200,200);
   //fill(0);
   //text("mouseX : "+mouseX, 20, 30);  
   //text("mouseY : "+mouseY, 20, 50);  
@@ -94,16 +94,16 @@ void welcome(){
   l3=l3-abs(0.25-l3)*0.3;
   l4=l4-abs(0.25-l4)*0.3;
   }
-  stroke(10);
+  strokeWeight(10);
   textSize(80);
 rect(width*-0.2+MX*0.01,height*0.13+MY*0.01,width*l1,height*0.1);
-text("About me",width*(l1-0.23)+MX*0.01,height*0.23+MY*0.01);
+text("About me",width*(l1-0.33)+MX*0.01,height*0.23+MY*0.01);
 rect(width*-0.2+MX*0.01,height*0.33+MY*0.01,width*l2,height*0.1);
-text("Sound",width*(l2-0.23)+MX*0.01,height*0.43+MY*0.01);
+text("Sound",width*(l2-0.33)+MX*0.01,height*0.43+MY*0.01);
 rect(width*-0.2+MX*0.01,height*0.53+MY*0.01,width*l3,height*0.1);
-text("Installations",width*(l3-0.23)+MX*0.01,height*0.63+MY*0.01);
+text("Installations",width*(l3-0.33)+MX*0.01,height*0.63+MY*0.01);
 rect(width*-0.2+MX*0.01,height*0.73+MY*0.01,width*l4,height*0.1);
-text("Contact",width*(l4-0.23)+MX*0.01,height*0.83+MY*0.01);
+text("Contact",width*(l4-0.33)+MX*0.01,height*0.83+MY*0.01);
 
 }
 void loopCounter(){
