@@ -1,6 +1,6 @@
 PImage wave1,wave2,wave3;
 float MX,MY;
-float loopC=0;
+float loopC=500;
 int piv=0;
 void setup(){
 
@@ -36,7 +36,7 @@ image(wave2,width-MX*0.01-abs(loopC-500)/2,-1000-MY*0.02,-500+MX*0.01+loopC,4000
 welcome();
 fill(255);
 textSize(100);
-text("9",0,0,200,200);
+text("10",0,0,200,200);
   //fill(0);
   //text("mouseX : "+mouseX, 20, 30);  
   //text("mouseY : "+mouseY, 20, 50);  
