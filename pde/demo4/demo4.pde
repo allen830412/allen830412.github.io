@@ -56,16 +56,13 @@ int piv=0;
 if(piv==0){
 if(loopC<=100){
 loopC=loopC+1;
-}
-if(loopC>100){
+}else if(loopC>100){
 piv=1;
 }
-}
-if(piv==1){
+}else if(piv==1){
 if(loopC>=0){
 loopC=loopC-1;
-}
-if(loopC<0){
+}else if(loopC<0){
 //loopC=0;
 piv=0;
 }
