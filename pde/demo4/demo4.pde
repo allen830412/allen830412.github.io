@@ -33,7 +33,8 @@ image(wave2,width-300-MX*0.01-loopC/2,-1000-MY*0.02,600+MX*0.01+loopC,4000);
 //fill(100);
  
 welcome();
-
+fill(255);
+text("1",0,0,200,200);
   //fill(0);
   //text("mouseX : "+mouseX, 20, 30);  
   //text("mouseY : "+mouseY, 20, 50);  
@@ -54,7 +55,8 @@ int piv=0;
 if(piv==0){
 if(loopC<100){
 loopC=loopC+1;
-}else if(loopC>100){
+}
+if(loopC>100){
 loopC=100;
 piv=1;
 }
@@ -62,7 +64,8 @@ piv=1;
 if(piv==1){
 if(loopC>0){
 loopC=loopC-1;
-}else if(loopC<0){
+}
+if(loopC<0){
 loopC=0;
 piv=0;
 }
