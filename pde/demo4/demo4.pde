@@ -25,9 +25,9 @@ void draw(){
   background(0);
 //tint(0);
 //imageMode(CORNERS);
-image(wave1,width-200-MX*0.03,-1000-MY*0.03,2800,4000);
-image(wave2,width-700-MX*0.02,-1000-MY*0.02,2800,4000);
-image(wave3,width-200+MX*0.01,-1500+MY*0.01,2800,4000);
+image(wave1,width-1400-MX*0.03,-1000-MY*0.03,2800,4000);
+image(wave2,width-1400-MX*0.02,-1000-MY*0.02,2800,4000);
+image(wave3,width-1400+MX*0.01,-1500+MY*0.01,2800,4000);
 //fill(100);
  
 welcome();
@@ -41,9 +41,9 @@ welcome();
 }
 void welcome(){
   fill(230,200);
-rect(width*-0.2+MX*0.01,height*0.13+MY*0.01,width*0.81,-height*0.1);
-rect(width*-0.2+MX*0.01,height*0.33+MY*0.01,width*0.81,-height*0.1);
-rect(width*-0.2+MX*0.01,height*0.53+MY*0.01,width*0.81,-height*0.1);
-rect(width*-0.2+MX*0.01,height*0.73+MY*0.01,width*0.81,-height*0.1);
+rect(width*-0.2+MX*0.01,height*0.13+MY*0.01,width*0.81,height*0.1);
+rect(width*-0.2+MX*0.01,height*0.33+MY*0.01,width*0.81,height*0.1);
+rect(width*-0.2+MX*0.01,height*0.53+MY*0.01,width*0.81,height*0.1);
+rect(width*-0.2+MX*0.01,height*0.73+MY*0.01,width*0.81,height*0.1);
 
 }
