@@ -35,7 +35,7 @@ image(wave2,width-300-MX*0.01-loopC/2,-1000-MY*0.02,600+MX*0.01+loopC,4000);
 welcome();
 fill(255);
 textSize(100);
-text("2",0,0,200,200);
+text("3",0,0,200,200);
   //fill(0);
   //text("mouseX : "+mouseX, 20, 30);  
   //text("mouseY : "+mouseY, 20, 50);  
@@ -54,7 +54,7 @@ rect(width*-0.2+MX*0.01,height*0.73+MY*0.01,width*0.81,height*0.1);
 void loopCounter(){
 int piv=0;
 if(piv==0){
-if(loopC<100){
+if(loopC<=100){
 loopC=loopC+1;
 }
 if(loopC>100){
@@ -62,7 +62,7 @@ piv=1;
 }
 }
 if(piv==1){
-if(loopC>0){
+if(loopC>=0){
 loopC=loopC-1;
 }
 if(loopC<0){
