@@ -58,7 +58,8 @@ loopC=loopC+1;
 loopC=100;
 piv=1;
 }
-}else if(piv==1){
+}
+if(piv==1){
 if(loopC>0){
 loopC=loopC-1;
 }else if(loopC<0){
