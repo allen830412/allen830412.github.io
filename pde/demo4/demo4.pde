@@ -4,6 +4,9 @@ float loopC=500;
 float loopC1=0;
 int piv,piv1=0;
 float l1=0.25,l2=0.25,l3=0.25,l4=0.25;
+PFont zombie,fifth;
+
+
 void setup(){
 
   jProcessingJS(this, {fullscreen:true, mouseoverlay:true});
@@ -13,7 +16,8 @@ void setup(){
   noStroke();
   background(0);
   ellipseMode(CENTER);
-
+  zombie = loadFont("ZombieStory.ttf", 32);
+  fifth = loadFont("FilthofIcarus.ttf", 32);
   
   wave1 = loadImage("wave1.png");
   wave2 = loadImage("wave2.png");
@@ -101,6 +105,7 @@ rect(width*-0.2+MX*0.01,height*0.73+MY*0.01,width*l4,height*0.1);
 
 stroke(10);
 strokeWeight(1);
+textFont(fifth);
 textSize(80);
 
 fill(240);
