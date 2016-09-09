@@ -1,7 +1,8 @@
 PImage wave1,wave2,wave3;
 float MX,MY;
 float loopC=500;
-int piv=0;
+float loopC1=0;
+int piv,piv1=0;
 void setup(){
 
   jProcessingJS(this, {fullscreen:true, mouseoverlay:true});
@@ -30,14 +31,14 @@ void draw(){
 //imageMode(CORNERS);
 //image(wave1,width-1400-MX*0.03,-1000-MY*0.03,2800,4000);
 image(wave2,width*0.7-MX*0.01-abs(loopC-500)*2,-1000-MY*0.02,+MX*0.01+loopC*1.4,4000-loopC*0.3);
-image(wave3,width*0.7-MX*0.01-abs(loopC-500)*2,-1000-MY*0.02,-MX*0.01+loopC*0.7,4000+loopC*0.2);
+image(wave3,width*0.7-MX*0.01-abs(loopC-500)*2,-1000-MY*0.02,-MX*0.01-loopC1*0.7,4000+loopC1*0.2);
 //image(wave3,width-1400+MX*0.01,-1500+MY*0.01,2800,4000);
 //fill(100);
  
 welcome();
 fill(255);
 textSize(100);
-text("15",0,0,200,200);
+text("16",0,0,200,200);
   //fill(0);
   //text("mouseX : "+mouseX, 20, 30);  
   //text("mouseY : "+mouseY, 20, 50);  
@@ -67,6 +68,21 @@ loopC=loopC-1;
 }else if(loopC<-500){
 //loopC=0;
 piv=0;
+}
+
+}
+if(piv1==0){
+if(loopC1<=500){
+loopC1=loopC1+1;
+}else if(loopC1>500){
+piv1=1;
+}
+}else if(piv1==1){
+if(loopC1>=-500){
+loopC1=loopC1-1;
+}else if(loopC1<-500){
+//loopC=0;
+piv1=0;
 }
 }
 }
