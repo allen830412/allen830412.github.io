@@ -33,8 +33,9 @@ void draw(){
 //rotate(loopC/PI);
 //image(wave2,width*0.7-MX*0.01-abs(loopC-500)*2,-1000-MY*0.02,MX*0.01+loopC*140,40000-loopC*0.3);
 //image(wave2,width*0.3-MX*0.01-abs(loopC-500)*2,-1000-MY*0.02,MX*0.01+loopC*0,40000-loopC*0.3);
-image(wave2,-1000-MX*0.005,-1000-MY*0.005,4000+loopC*0.1,8000+loopC1*0.1);
-
+rotate(loopC/100);
+image(wave2,-1000-MX*0.005,-1000-MY*0.005,4000+loopC*0.4,8000+loopC1*0.4);
+rotate(-loopC/100);
 //image(wave3,width*0.7-MX*0.01-abs(loopC-500)*2,-1000-MY*0.02,MX*0.01-loopC1*70,40000*+loopC1*0.2);
 //image(wave3,width-1400+MX*0.01,-1500+MY*0.01,2800,4000);
 //fill(100);
@@ -42,7 +43,7 @@ image(wave2,-1000-MX*0.005,-1000-MY*0.005,4000+loopC*0.1,8000+loopC1*0.1);
 welcome();
 fill(255);
 textSize(100);
-text("25",0,0,200,200);
+text("26",0,0,200,200);
   //fill(0);
   //text("mouseX : "+mouseX, 20, 30);  
   //text("mouseY : "+mouseY, 20, 50);  
