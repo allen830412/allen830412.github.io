@@ -44,6 +44,19 @@ background-color:red; opacity:0.1;
 background-color:red; opacity:0.1; 
 }
 
+.page-1{ position:absolute; top:0%; left:0%; width:10%; height:100%; 
+background-color:blue; opacity:0.1; 
+}
+.page-2{ position:absolute; top:0%; right:0%; width:10%; height:100%; 
+background-color:blue; opacity:0.1; 
+}
+.page-3{ position:absolute; top:0%; left:0%; width:100%; height:13%; 
+background-color:blue; opacity:0.1; 
+}
+.page-4{ position:absolute; bottom:0%; left:0%; width:100%; height:7%; 
+background-color:blue; opacity:0.1; 
+}
+
 canvas { margin:0; padding:0; }
 canvas.small { width:300px; height:300px; }
 canvas.wide { width:100%; height:300px; }
@@ -63,15 +76,46 @@ canvas.wide { width:100%; height:300px; }
  });
     function pa1(){
         $('.page-1').show();
+        document.getElementById('l1').disabled=true;
+        document.getElementById('l2').disabled=true;
+        document.getElementById('l3').disabled=true;
+        document.getElementById('l4').disabled=true;
     }
     function pa2(){
         $('.page-2').show();
+        document.getElementById('l1').disabled=true;
+        document.getElementById('l2').disabled=true;
+        document.getElementById('l3').disabled=true;
+        document.getElementById('l4').disabled=true;
     }
     function pa3(){
         $('.page-3').show();
+        document.getElementById('l1').disabled=true;
+        document.getElementById('l2').disabled=true;
+        document.getElementById('l3').disabled=true;
+        document.getElementById('l4').disabled=true;
     }
     function pa4(){
         $('.page-4').show();
+        document.getElementById('l1').disabled=true;
+        document.getElementById('l2').disabled=true;
+        document.getElementById('l3').disabled=true;
+        document.getElementById('l4').disabled=true;
+    }
+    function back(){
+        $('.page-1').hide();
+        $('.page-2').hide();
+        $('.page-3').hide();
+        $('.page-4').hide();
+        document.getElementById('l1').disabled=false;
+        document.getElementById('l2').disabled=false;
+        document.getElementById('l3').disabled=false;
+        document.getElementById('l4').disabled=false;
+        document.getElementById('b1').disabled=true;
+        document.getElementById('b2').disabled=true;
+        document.getElementById('b3').disabled=true;
+        document.getElementById('b4').disabled=true;
+
     }
         
    
@@ -83,29 +127,50 @@ canvas.wide { width:100%; height:300px; }
 
 <canvas id="demo" data-processing-sources="pde/demo4/demo4.pde"></canvas>
 <div class="welcome-1">
-<button type="button" class="butt" onclick="pa1()"></button>
+<button type="button" class="butt" id="l1" onclick="pa1()"></button>
 </div>
 <div class="welcome-2">
-<button type="button" class="butt" onclick="pa2()"></button>
+<button type="button" class="butt" id="l2" onclick="pa2()"></button>
 </div>
 <div class="welcome-3">
-<button type="button" class="butt" onclick="pa3()"></button>
+<button type="button" class="butt" id="l3" onclick="pa3()"></button>
 </div>
 <div class="welcome-4">
-<button type="button" class="butt" onclick="pa4()"></button>
+<button type="button" class="butt" id="l4" onclick="pa4()"></button>
 </div>
 
 <div class="page-1">
+<font size="10">
 about me
+</font>
 </div>
 <div class="page-2">
+<font size="10">
 sound
+</font>
 </div>
 <div class="page-3">
+    <font size="10">
 installations
+</font>
 </div>
 <div class="page-4">
+    <font size="10">
 contact
+</font>
+</div>
+
+<div class="edge-1">
+<button type="button" class="butt" id="b1" onclick="back()"></button>
+</div>
+<div class="edge-2">
+<button type="button" class="butt" id="b2" onclick="back()"></button>
+</div>
+<div class="edge-3">
+<button type="button" class="butt" id="b3" onclick="back()"></button>
+</div>
+<div class="edge-4">
+<button type="button" class="butt" id="b4" onclick="back()"></button>
 </div>
 <!-- <div class="overlay"></div> -->
 	
