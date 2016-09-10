@@ -63,7 +63,7 @@ void draw(){
   fill(255);
   textSize(100);
   //-------------------------------------------------<title>
-  text("ZHENG KAI LUN 78"+phase+page,0,10,2000,200);
+  text("ZHENG KAI LUN",0,10,2000,200);
   //text("x"+mouseX/width+"y"+mouseY/height,0,100,2000,200);
 }
 //void mouseClicked(){
