@@ -12,11 +12,13 @@ float l1=0.25,l2=0.25,l3=0.25,l4=0.25;
 float h1=0.10,h2=0.10,h3=0.10,h4=0.10;
 float x1=-0.2,x2=-0.2,x3=-0.2,x4=-0.2;
 float y1=0.13,y2=0.33,y3=0.53,y4=0.73;
+float t1=0,t2=0,t3=0,t4=0;
 
 float zl1=0.25,zl2=0.25,zl3=0.25,zl4=0.25;
 float zh1=0.10,zh2=0.10,zh3=0.10,zh4=0.10;
 float zx1=-0.2,zx2=-0.2,zx3=-0.2,zx4=-0.2;
 float zy1=0.13,zy2=0.33,zy3=0.53,zy4=0.73;
+float zt1=0,zt2=0,zt3=0,zt4=0;
 
 float xPos=-0.2,yPos; 
 int page=0;
@@ -61,7 +63,7 @@ void draw(){
   fill(255);
   textSize(100);
   //-------------------------------------------------<title>
-  text("ZHENG KAI LUN 71"+phase+page,0,0,2000,200);
+  text("ZHENG KAI LUN 72"+phase+page,0,0,2000,200);
   //text("x"+mouseX/width+"y"+mouseY/height,0,100,2000,200);
 }
 void mouseClicked(){
