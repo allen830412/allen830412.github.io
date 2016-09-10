@@ -103,7 +103,7 @@ void draw(){
 //}
 void mousePressed(){
 if(phase=="welcome"){
-if(mouseX<width*0.2){
+if(mouseX<width*0.4){
     if(mouseY>height*0.13&&mouseY<height*0.23){
      phase="pages";
      page=1;
