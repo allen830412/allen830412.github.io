@@ -55,20 +55,25 @@ canvas.wide { width:100%; height:300px; }
 <script type="text/javascript" src="js/processing-1.4.1.min.js"></script>
 <script src="js/jquery-3.1.0.min.js"></script>
 <script type="text/javascript">
-$(document).ready(function(){
+function start(){
+$('.page-1').hide();
+$('.page-2').hide();
+$('.page-3').hide();
+$('.page-4').hide();
+}
+start();
     function pa1(){
-        $('.page-1').removeClass("hidden").addClass("visible");
+        $('.page-1').show();
     }
     function pa2(){
-        $('.page-2').removeClass("hidden").addClass("visible");
+        $('.page-2').show();
     }
     function pa3(){
-        $('.page-3').removeClass("hidden").addClass("visible");
+        $('.page-3').show();
     }
     function pa4(){
-        $('.page-4').removeClass("hidden").addClass("visible");
+        $('.page-4').show();
     }
-      }); 
         
    
 </script>
@@ -91,16 +96,16 @@ $(document).ready(function(){
 <button type="button" class="butt" onclick="pa4()"></button>
 </div>
 
-<div class="page-1" hidden>
+<div class="page-1">
 about me
 </div>
-<div class="page-2" hidden>
+<div class="page-2">
 sound
 </div>
-<div class="page-3" hidden>
+<div class="page-3">
 installations
 </div>
-<div class="page-4" hidden>
+<div class="page-4">
 contact
 </div>
 <!-- <div class="overlay"></div> -->
