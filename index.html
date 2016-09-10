@@ -55,13 +55,12 @@ canvas.wide { width:100%; height:300px; }
 <script type="text/javascript" src="js/processing-1.4.1.min.js"></script>
 <script src="js/jquery-3.1.0.min.js"></script>
 <script type="text/javascript">
-function start(){
-$('.page-1').hide();
-$('.page-2').hide();
-$('.page-3').hide();
-$('.page-4').hide();
-}
-start();
+ $(document).ready(function(){
+    $('.page-1').hide();
+    $('.page-2').hide();
+    $('.page-3').hide();
+    $('.page-4').hide();
+ });
     function pa1(){
         $('.page-1').show();
     }
