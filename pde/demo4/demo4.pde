@@ -38,7 +38,7 @@ void draw(){
   
   fill(255);
   textSize(100);
-  text("ZHENG KAI LUN 48",0,0,200,200);
+  text("ZHENG KAI LUN 48",0,0,2000,200);
 }
 void backgroundFX(){
 rotate(loopC/1500);
