@@ -45,8 +45,9 @@ void draw(){
   mousePosition();
   background(0);
   backgroundFX();
-  if(k<1000){
+  if(k<100){
   k+=1;
+  textSize(100);
   text(k,width/2,height/2);
   }else{
   objects();
@@ -60,7 +61,7 @@ void draw(){
   fill(255);
   textSize(100);
   //-------------------------------------------------<title>
-  text("ZHENG KAI LUN 69"+phase+page,0,0,2000,200);
+  text("ZHENG KAI LUN 70"+phase+page,0,0,2000,200);
   //text("x"+mouseX/width+"y"+mouseY/height,0,100,2000,200);
 }
 void mouseClicked(){
