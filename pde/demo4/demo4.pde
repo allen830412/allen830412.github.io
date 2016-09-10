@@ -5,7 +5,7 @@ float xl=0.25;
 float loopC=500;
 float loopC1=0;
 int piv,piv1=0;
-int p1=-1,p2=-1,p3=-1,p4=-1;
+int p1=1,p2=1,p3=1,p4=1;
 float l1=0.25,l2=0.25,l3=0.25,l4=0.25;
 float x1=-0.2,x2=-0.2,x3=-0.2,x4=-0.2;
 float y1=0.13,y2=0.33,y3=0.53,y4=0.73;
@@ -49,10 +49,10 @@ void draw(){
   fill(255);
   textSize(100);
   //-------------------------------------------------<title>
-  text("ZHENG KAI LUN 55"+phase+page,0,0,2000,200);
+  text("ZHENG KAI LUN 56"+phase+page,0,0,2000,200);
 }
 void mouseClicked(){
-  whether();
+  //whether();
 if(mouseX<width*0.2){
     if(mouseY>height*0.13&&mouseY<height*0.23){
      phase="pages";
@@ -81,29 +81,29 @@ if(mouseX<width*0.2){
 }
 void pages(int p){
 if(p==1){
-    l1=l1+abs(0.8-l1)*0.3;
+    l1=l1+(0.8-l1)*0.3;
     
-    l2=l2+abs(xl-l2)*0.3*p2;
-    l3=l3+abs(xl-l3)*0.3*p3;
-    l4=l4+abs(xl-l4)*0.3*p4;
+    l2=l2+(xl-l2)*0.3*p2;
+    l3=l3+(xl-l3)*0.3*p3;
+    l4=l4+(xl-l4)*0.3*p4;
 }else if(p==2){
-    l2=l2+abs(0.8-l2)*0.3;
+    l2=l2+(0.8-l2)*0.3;
     
-    l1=l1+abs(xl-l1)*0.3*p1;
-    l3=l3+abs(xl-l3)*0.3*p3;
-    l4=l4+abs(xl-l4)*0.3*p4;
+    l1=l1+(xl-l1)*0.3*p1;
+    l3=l3+(xl-l3)*0.3*p3;
+    l4=l4+(xl-l4)*0.3*p4;
 }else if(p==3){
-    l3=l3+abs(0.8-l3)*0.3;
+    l3=l3+(0.8-l3)*0.3;
     
-    l1=l1+abs(xl-l1)*0.3*p1;
-    l2=l2+abs(xl-l2)*0.3*p2;
-    l4=l4+abs(xl-l4)*0.3*p4;
+    l1=l1+(xl-l1)*0.3*p1;
+    l2=l2+(xl-l2)*0.3*p2;
+    l4=l4+(xl-l4)*0.3*p4;
 }else if(p==4){
-    l4=l4+abs(0.8-l4)*0.3;
+    l4=l4+(0.8-l4)*0.3;
     
-    l1=l1+abs(xl-l1)*0.3*p1;
-    l2=l2+abs(xl-l2)*0.3*p2;
-    l3=l3+abs(xl-l3)*0.3*p3;
+    l1=l1+(xl-l1)*0.3*p1;
+    l2=l2+(xl-l2)*0.3*p2;
+    l3=l3+(xl-l3)*0.3*p3;
 }
 }
 void whether(){
@@ -147,40 +147,40 @@ void mousePosition(){
 void welcome(){
 if(mouseX<width*0.2){
     if(mouseY>height*0.13&&mouseY<height*0.23){
-    l1=l1+abs(0.5-l1)*0.3;
+    l1=l1+(0.5-l1)*0.3;
     
-    l2=l2+abs(xl-l2)*0.3*p2;
-    l3=l3+abs(xl-l3)*0.3*p3;
-    l4=l4+abs(xl-l4)*0.3*p4;
+    l2=l2+(xl-l2)*0.3*p2;
+    l3=l3+(xl-l3)*0.3*p3;
+    l4=l4+(xl-l4)*0.3*p4;
     }else if(mouseY>height*0.33&&mouseY<height*0.43){
-    l2=l2+abs(0.5-l2)*0.3;
+    l2=l2+(0.5-l2)*0.3;
     
-    l1=l1+abs(xl-l1)*0.3*p1;
-    l3=l3+abs(xl-l3)*0.3*p3;
-    l4=l4+abs(xl-l4)*0.3*p4;
+    l1=l1+(xl-l1)*0.3*p1;
+    l3=l3+(xl-l3)*0.3*p3;
+    l4=l4+(xl-l4)*0.3*p4;
     }else if(mouseY>height*0.53&&mouseY<height*0.63){
-    l3=l3+abs(0.5-l3)*0.3;
+    l3=l3+(0.5-l3)*0.3;
     
-    l1=l1+abs(xl-l1)*0.3*p1;
-    l2=l2+abs(xl-l2)*0.3*p2;
-    l4=l4+abs(xl-l4)*0.3*p4;
+    l1=l1+(xl-l1)*0.3*p1;
+    l2=l2+(xl-l2)*0.3*p2;
+    l4=l4+(xl-l4)*0.3*p4;
     }else if(mouseY>height*0.73&&mouseY<height*0.83){
-    l4=l4+abs(0.5-l4)*0.3;
+    l4=l4+(0.5-l4)*0.3;
     
-    l1=l1+abs(xl-l1)*0.3*p1;
-    l2=l2+abs(xl-l2)*0.3*p2;
-    l3=l3+abs(xl-l3)*0.3*p3;
+    l1=l1+(xl-l1)*0.3*p1;
+    l2=l2+(xl-l2)*0.3*p2;
+    l3=l3+(xl-l3)*0.3*p3;
     }else{
-  l1=l1+abs(xl-l1)*0.3*p1;
-  l2=l2+abs(xl-l2)*0.3*p2;
-  l3=l3+abs(xl-l3)*0.3*p3;
-  l4=l4+abs(xl-l4)*0.3*p4;
+  l1=l1+(xl-l1)*0.3*p1;
+  l2=l2+(xl-l2)*0.3*p2;
+  l3=l3+(xl-l3)*0.3*p3;
+  l4=l4+(xl-l4)*0.3*p4;
   }
   }else{
-  l1=l1+abs(xl-l1)*0.3*p1;
-  l2=l2+abs(xl-l2)*0.3*p2;
-  l3=l3+abs(xl-l3)*0.3*p3;
-  l4=l4+abs(xl-l4)*0.3*p4;
+  l1=l1+(xl-l1)*0.3*p1;
+  l2=l2+(xl-l2)*0.3*p2;
+  l3=l3+(xl-l3)*0.3*p3;
+  l4=l4+(xl-l4)*0.3*p4;
   }
 }
 void objects(){
