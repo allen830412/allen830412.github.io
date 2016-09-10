@@ -54,7 +54,7 @@ void draw(){
   fill(255);
   textSize(100);
   //-------------------------------------------------<title>
-  text("ZHENG KAI LUN 67"+phase+page,0,0,2000,200);
+  text("ZHENG KAI LUN 68"+phase+page,0,0,2000,200);
   //text("x"+mouseX/width+"y"+mouseY/height,0,100,2000,200);
 }
 void mouseClicked(){
@@ -204,14 +204,14 @@ fill(10);
 text("Sound",width*(x2+l2)+MX*0.01+1,height*(y2+0.1)+MY*0.01+2);
 
 fill(240);
-text("Installations",width*(x3+l3)+MX*0.01-20,height*(y3+0.1)+MY*0.01);
+text("Installations",width*(x3+l3)+MX*0.01,height*(y3+0.1)+MY*0.01);
 fill(10);
-text("Installations",width*(x3+l3)+MX*0.01+1-20,height*(y3+0.1)+MY*0.01+2);
+text("Installations",width*(x3+l3)+MX*0.01,height*(y3+0.1)+MY*0.01+2);
 
 fill(240);
-text("Contact",width*(x4+l4)+MX*0.01-15,height*(y4+0.1)+MY*0.01);
+text("Contact",width*(x4+l4)+MX*0.01,height*(y4+0.1)+MY*0.01);
 fill(10);
-text("Contact",width*(x4+l4)+MX*0.01+1-15,height*(y4+0.1)+MY*0.01+2);
+text("Contact",width*(x4+l4)+MX*0.01+1,height*(y4+0.1)+MY*0.01+2);
 
 }
 void loopCounter(){
