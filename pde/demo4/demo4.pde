@@ -23,7 +23,9 @@ PFont zombie,fifth;
 
 
 void setup(){
-
+  wave1 = loadImage("wave1.png");
+  wave2 = loadImage("wave2.png");
+  wave3 = loadImage("wave3.png");
   jProcessingJS(this, {fullscreen:true, mouseoverlay:true});
   //size(300, 300);
   smooth();
@@ -33,20 +35,15 @@ void setup(){
   ellipseMode(CENTER);
   zombie = loadFont("ZombieStory.ttf");
   fifth = loadFont("FilthofIcarus.ttf");
-  
-  wave1 = loadImage("wave1.png");
-  wave2 = loadImage("wave2.png");
-  wave3 = loadImage("wave3.png");
-
 }
 
 // Main draw loop
 //-----------------------------------------------<draw>
 void draw(){
+  backgroundFX();
   loopCounter();
   mousePosition();
   background(0);
-  backgroundFX();
   objects();
   if(phase == "welcome"){
   welcome();
@@ -57,35 +54,39 @@ void draw(){
   fill(255);
   textSize(100);
   //-------------------------------------------------<title>
-  text("ZHENG KAI LUN 57"+phase+page,0,0,2000,200);
+  text("ZHENG KAI LUN 58"+phase+page,0,0,2000,200);
 }
 void mouseClicked(){
-  //[]whether();
+if(phase=="welcome"){
 if(mouseX<width*0.2){
     if(mouseY>height*0.13&&mouseY<height*0.23){
      phase="pages";
      page=1;
-     xl=0;
     }else if(mouseY>height*0.33&&mouseY<height*0.43){
      phase="pages";
      page=2;
-     xl=0;
     }else if(mouseY>height*0.53&&mouseY<height*0.63){
      phase="pages";
      page=3;
-     xl=0;
     }else if(mouseY>height*0.73&&mouseY<height*0.83){
      phase="pages";
      page=4;
-     xl=0;
-    }else{
-  phase="welcome";
-  xl=0.25;
-  }
+    }
   }else{
   phase="welcome";
-  xl=0.25;
   }
+}else if(phase=="pages"){
+if(mouseX>width*0.9&&mouseX<0.1&&mouseY<0.13&&mouseY>0.93){
+   zx1=zx2=zx3=zx4=-0.2;
+   zy1=0.13;
+   zy2=0.33;
+   zy3=0.53;
+   zy4=0.73;
+   zh1=zh2=zh3=zh4=0.1;
+   zl1=zl2=zl3=zl4=0.25;
+   phase="welcome";
+}
+}
 }
 void pages(int p){
 if(p==1){
