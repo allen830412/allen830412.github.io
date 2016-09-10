@@ -6,9 +6,17 @@ float loopC=500;
 float loopC1=0;
 int piv,piv1=0;
 int p1=1,p2=1,p3=1,p4=1;
+
 float l1=0.25,l2=0.25,l3=0.25,l4=0.25;
+float h1=0.10,h2=0.10,h3=0.10,h4=0.10;
 float x1=-0.2,x2=-0.2,x3=-0.2,x4=-0.2;
 float y1=0.13,y2=0.33,y3=0.53,y4=0.73;
+
+float zl1=0.25,zl2=0.25,zl3=0.25,zl4=0.25;
+float zh1=0.10,zh2=0.10,zh3=0.10,zh4=0.10;
+float zx1=-0.2,zx2=-0.2,zx3=-0.2,zx4=-0.2;
+float zy1=0.13,zy2=0.33,zy3=0.53,zy4=0.73;
+
 float xPos=-0.2,yPos; 
 int page=0;
 PFont zombie,fifth;
@@ -49,10 +57,10 @@ void draw(){
   fill(255);
   textSize(100);
   //-------------------------------------------------<title>
-  text("ZHENG KAI LUN 56"+phase+page,0,0,2000,200);
+  text("ZHENG KAI LUN 57"+phase+page,0,0,2000,200);
 }
 void mouseClicked(){
-  //whether();
+  //[]whether();
 if(mouseX<width*0.2){
     if(mouseY>height*0.13&&mouseY<height*0.23){
      phase="pages";
@@ -81,57 +89,36 @@ if(mouseX<width*0.2){
 }
 void pages(int p){
 if(p==1){
-    l1=l1+(0.8-l1)*0.3;
+    zx1=0.1;
+    zy1=0.13;
+    zh1=0.8;
+    zl1=0.8;
     
-    l2=l2+(xl-l2)*0.3*p2;
-    l3=l3+(xl-l3)*0.3*p3;
-    l4=l4+(xl-l4)*0.3*p4;
+    zl2=zl3=zl4=0;
 }else if(p==2){
-    l2=l2+(0.8-l2)*0.3;
+    zx2=0.1;
+    zy2=0.13;
+    zh2=0.8;
+    zl2=0.8;
     
-    l1=l1+(xl-l1)*0.3*p1;
-    l3=l3+(xl-l3)*0.3*p3;
-    l4=l4+(xl-l4)*0.3*p4;
+    zl1=zl3=zl4=0;
 }else if(p==3){
-    l3=l3+(0.8-l3)*0.3;
+    zx3=0.1;
+    zy3=0.13;
+    zh3=0.8;
+    zl3=0.8;
     
-    l1=l1+(xl-l1)*0.3*p1;
-    l2=l2+(xl-l2)*0.3*p2;
-    l4=l4+(xl-l4)*0.3*p4;
+    zl2=zl1=zl4=0;
 }else if(p==4){
-    l4=l4+(0.8-l4)*0.3;
+    zx4=0.1;
+    zy4=0.13;
+    zh4=0.8;
+    zl4=0.8;
     
-    l1=l1+(xl-l1)*0.3*p1;
-    l2=l2+(xl-l2)*0.3*p2;
-    l3=l3+(xl-l3)*0.3*p3;
+    zl2=zl3=zl1=0;
 }
-}
-void whether(){
-  
-if(l1>xl){
-p1=-1;
-}else{
-p1=1;
 }
 
-if(l2>xl){
-p2=-1;
-}else{
-p2=1;
-}
-
-if(l3>xl){
-p3=-1;
-}else{
-p3=1;
-}
-
-if(l4>xl){
-p4=-1;
-}else{
-p4=1;
-}
-}
 void backgroundFX(){
 rotate(loopC/1500);
 image(wave2,-100-MX*0.005,-3600-MY*0.005,4000+loopC*1.9,8000+loopC1*1.9);
@@ -147,50 +134,55 @@ void mousePosition(){
 void welcome(){
 if(mouseX<width*0.2){
     if(mouseY>height*0.13&&mouseY<height*0.23){
-    l1=l1+(0.5-l1)*0.3;
+    zl1=0.5;
     
-    l2=l2+(xl-l2)*0.3*p2;
-    l3=l3+(xl-l3)*0.3*p3;
-    l4=l4+(xl-l4)*0.3*p4;
+    zl2=zl3=zl4=0.25;
     }else if(mouseY>height*0.33&&mouseY<height*0.43){
-    l2=l2+(0.5-l2)*0.3;
+    zl2=0.5;
     
-    l1=l1+(xl-l1)*0.3*p1;
-    l3=l3+(xl-l3)*0.3*p3;
-    l4=l4+(xl-l4)*0.3*p4;
+    zl1=zl3=zl4=0.25;
     }else if(mouseY>height*0.53&&mouseY<height*0.63){
-    l3=l3+(0.5-l3)*0.3;
+    zl3=0.5;
     
-    l1=l1+(xl-l1)*0.3*p1;
-    l2=l2+(xl-l2)*0.3*p2;
-    l4=l4+(xl-l4)*0.3*p4;
+    zl1=zl2=zl4=0.25;
     }else if(mouseY>height*0.73&&mouseY<height*0.83){
-    l4=l4+(0.5-l4)*0.3;
+    zl4=0.5;
     
-    l1=l1+(xl-l1)*0.3*p1;
-    l2=l2+(xl-l2)*0.3*p2;
-    l3=l3+(xl-l3)*0.3*p3;
+    zl1=zl2=zl3=0.25;
     }else{
-  l1=l1+(xl-l1)*0.3*p1;
-  l2=l2+(xl-l2)*0.3*p2;
-  l3=l3+(xl-l3)*0.3*p3;
-  l4=l4+(xl-l4)*0.3*p4;
+  zl1=zl2=zl3=zl4=0.25;
   }
   }else{
-  l1=l1+(xl-l1)*0.3*p1;
-  l2=l2+(xl-l2)*0.3*p2;
-  l3=l3+(xl-l3)*0.3*p3;
-  l4=l4+(xl-l4)*0.3*p4;
+  zl1=zl2=zl3=zl4=0.25;
   }
 }
 void objects(){
-  fill(230,200);
+l1=l1+(zl1-l1)*0.3;
+l2=l2+(zl2-l2)*0.3;
+l3=l3+(zl3-l3)*0.3;
+l4=l4+(zl4-l4)*0.3;
   
-  
-rect(width*x1+MX*0.01,height*y1+MY*0.01,width*l1,height*0.1);
-rect(width*x2+MX*0.01,height*y2+MY*0.01,width*l2,height*0.1);
-rect(width*x3+MX*0.01,height*y3+MY*0.01,width*l3,height*0.1);
-rect(width*x4+MX*0.01,height*y4+MY*0.01,width*l4,height*0.1);
+h1=h1+(zh1-h1)*0.3;
+h2=h2+(zh2-h2)*0.3;
+h3=h3+(zh3-h3)*0.3;
+h4=h4+(zh4-h4)*0.3; 
+
+x1=x1+(zx1-x1)*0.3;
+x2=x2+(zx2-x2)*0.3;
+x3=x3+(zx3-x3)*0.3;
+x4=x4+(zx4-x4)*0.3;
+
+y1=y1+(zy1-y1)*0.3;
+y2=y2+(zy2-y2)*0.3;
+y3=y3+(zy3-y3)*0.3;
+y4=y4+(zy4-y4)*0.3;
+
+fill(230,200);
+ 
+rect(width*x1+MX*0.01,height*y1+MY*0.01,width*l1,height*h1);
+rect(width*x2+MX*0.01,height*y2+MY*0.01,width*l2,height*h2);
+rect(width*x3+MX*0.01,height*y3+MY*0.01,width*l3,height*h3);
+rect(width*x4+MX*0.01,height*y4+MY*0.01,width*l4,height*h4);
 
 stroke(10);
 strokeWeight(1);
@@ -248,5 +240,31 @@ loopC1=loopC1-1;
 //loopC=0;
 piv1=0;
 }
+}
+}
+void whether(){
+  
+if(l1>xl){
+p1=-1;
+}else{
+p1=1;
+}
+
+if(l2>xl){
+p2=-1;
+}else{
+p2=1;
+}
+
+if(l3>xl){
+p3=-1;
+}else{
+p3=1;
+}
+
+if(l4>xl){
+p4=-1;
+}else{
+p4=1;
 }
 }
