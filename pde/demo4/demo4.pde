@@ -46,7 +46,7 @@ void draw(){
   textSize(100);
   text("ZHENG KAI LUN 48",0,0,2000,200);
 }
-mouseClicked(){
+void mouseClicked(){
 
 }
 void pages(int p){
