@@ -47,7 +47,7 @@ void draw(){
   fill(255);
   textSize(100);
   //-------------------------------------------------<title>
-  text("ZHENG KAI LUN 51"+phase+page,0,0,2000,200);
+  text("ZHENG KAI LUN 52"+phase+page,0,0,2000,200);
 }
 void mouseClicked(){
 if(mouseX<width*0.2){
@@ -65,17 +65,17 @@ if(mouseX<width*0.2){
      page=4;
     }else{
   phase="welcome";
-  l1=l1-abs(0.25-l1)*0.3;
-  l2=l2-abs(0.25-l2)*0.3;
-  l3=l3-abs(0.25-l3)*0.3;
-  l4=l4-abs(0.25-l4)*0.3;
+  l1=0.25;
+  l2=0.25;
+  l3=0.25;
+  l4=0.25;
   }
   }else{
   phase="welcome";
-  l1=l1-abs(0.25-l1)*0.3;
-  l2=l2-abs(0.25-l2)*0.3;
-  l3=l3-abs(0.25-l3)*0.3;
-  l4=l4-abs(0.25-l4)*0.3;
+  l1=0.25;
+  l2=0.25;
+  l3=0.25;
+  l4=0.25;
   }
 }
 void pages(int p){
