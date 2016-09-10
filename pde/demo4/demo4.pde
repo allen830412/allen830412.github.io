@@ -26,7 +26,7 @@ PFont zombie,fifth;
 
 
 void setup(){
-  wave1 = loadImage("wave1.png");
+  //wave1 = loadImage("wave1.png");
   wave2 = loadImage("wave2.png");
   wave3 = loadImage("wave3.png");
   jProcessingJS(this, {fullscreen:true, mouseoverlay:true});
@@ -63,7 +63,7 @@ void draw(){
   fill(255);
   textSize(100);
   //-------------------------------------------------<title>
-  text("ZHENG KAI LUN 72"+phase+page,0,0,2000,200);
+  text("ZHENG KAI LUN 73"+phase+page,0,0,2000,200);
   //text("x"+mouseX/width+"y"+mouseY/height,0,100,2000,200);
 }
 void mouseClicked(){
@@ -95,6 +95,7 @@ if(mouseX>width*0.9||mouseX<width*0.1||mouseY<height*0.13||mouseY>height*0.93){
    zy4=0.73;
    zh1=zh2=zh3=zh4=0.1;
    zl1=zl2=zl3=zl4=0.25;
+   zt1=zt2=zt3=zt4=0;
    phase="welcome";
   
 }
@@ -106,6 +107,7 @@ if(p==1){
     zy1=0.13;
     zh1=0.8;
     zl1=0.8;
+    zt1=-0.25;
     
     zl2=zl3=zl4=-1;
 }else if(p==2){
@@ -113,6 +115,7 @@ if(p==1){
     zy2=0.13;
     zh2=0.8;
     zl2=0.8;
+    zt2=-0.2;
     
     zl1=zl3=zl4=-1;
 }else if(p==3){
@@ -120,6 +123,7 @@ if(p==1){
     zy3=0.13;
     zh3=0.8;
     zl3=0.8;
+    zt3=-0.27;
     
     zl2=zl1=zl4=-1;
 }else if(p==4){
@@ -127,6 +131,7 @@ if(p==1){
     zy4=0.13;
     zh4=0.8;
     zl4=0.8;
+    zt3=-0.22;
     
     zl2=zl3=zl1=-1;
 }
@@ -190,6 +195,11 @@ y2=y2+(zy2-y2)*0.3;
 y3=y3+(zy3-y3)*0.3;
 y4=y4+(zy4-y4)*0.3;
 
+t1=t1+(zt1-t1)*0.3;
+t2=t2+(zt2-t2)*0.3;
+t3=t3+(zt3-t3)*0.3;
+t4=t4+(zt4-t4)*0.3;
+
 fill(230,200);
  
 rect(width*x1+MX*0.01,height*y1+MY*0.01,width*l1,height*h1);
@@ -200,27 +210,27 @@ rect(width*x4+MX*0.01,height*y4+MY*0.01,width*l4,height*h4);
 stroke(10);
 strokeWeight(1);
 textFont(fifth);
-textSize(80);
+textSize(height*0.8);
 
 fill(240);
-text("About me",width*(x1+l1)+MX*0.01,height*(y1+0.1)+MY*0.01);
+text("About me",width*(x1+l1+t1)+MX*0.01,height*(y1+0.1)+MY*0.01);
 fill(10);
-text("About me",width*(x1+l1)+MX*0.01+1,height*(y1+0.1)+MY*0.01+2);
+text("About me",width*(x1+l1+t1)+MX*0.01+1,height*(y1+0.1)+MY*0.01+2);
 
 fill(240);
-text("Sound",width*(x2+l2)+MX*0.01,height*(y2+0.1)+MY*0.01);
+text("Sound",width*(x2+l2+t2)+MX*0.01,height*(y2+0.1)+MY*0.01);
 fill(10);
-text("Sound",width*(x2+l2)+MX*0.01+1,height*(y2+0.1)+MY*0.01+2);
+text("Sound",width*(x2+l2+t2)+MX*0.01+1,height*(y2+0.1)+MY*0.01+2);
 
 fill(240);
-text("Installations",width*(x3+l3)+MX*0.01,height*(y3+0.1)+MY*0.01);
+text("Installations",width*(x3+l3+t3)+MX*0.01,height*(y3+0.1)+MY*0.01);
 fill(10);
-text("Installations",width*(x3+l3)+MX*0.01,height*(y3+0.1)+MY*0.01+2);
+text("Installations",width*(x3+l3+t3)+MX*0.01,height*(y3+0.1)+MY*0.01+2);
 
 fill(240);
-text("Contact",width*(x4+l4)+MX*0.01,height*(y4+0.1)+MY*0.01);
+text("Contact",width*(x4+l4+t4)+MX*0.01,height*(y4+0.1)+MY*0.01);
 fill(10);
-text("Contact",width*(x4+l4)+MX*0.01+1,height*(y4+0.1)+MY*0.01+2);
+text("Contact",width*(x4+l4+t4)+MX*0.01+1,height*(y4+0.1)+MY*0.01+2);
 
 }
 void loopCounter(){
