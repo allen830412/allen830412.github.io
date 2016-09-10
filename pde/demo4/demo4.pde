@@ -8,6 +8,7 @@ float l1=0.25,l2=0.25,l3=0.25,l4=0.25;
 float x1=-0.2,x2=-0.2,x3=-0.2,x4=-0.2;
 float y1=0.13,y2=0.33,y3=0.53,y4=0.73;
 float xPos=-0.2,yPos; 
+int page=0;
 PFont zombie,fifth;
 
 
@@ -30,6 +31,7 @@ void setup(){
 }
 
 // Main draw loop
+//-----------------------------------------------<draw>
 void draw(){
   loopCounter();
   mousePosition();
@@ -39,18 +41,61 @@ void draw(){
   if(phase == "welcome"){
   welcome();
   }else if(phase=="pages"){
-  
+  pages(page);
   }
   
   fill(255);
   textSize(100);
-  text("ZHENG KAI LUN 48",0,0,2000,200);
+  //-------------------------------------------------<title>
+  text("ZHENG KAI LUN 49",0,0,2000,200);
 }
 void mouseClicked(){
-
+if(mouseX<width*0.2){
+    if(mouseY>height*0.13&&mouseY<height*0.23){
+     phase="pages";
+     page=1;
+    }else if(mouseY>height*0.33&&mouseY<height*0.43){
+     phase="pages";
+     page=2;
+    }else if(mouseY>height*0.53&&mouseY<height*0.63){
+     phase="pages";
+     page=3;
+    }else if(mouseY>height*0.73&&mouseY<height*0.83){
+     phase="pages";
+     page=4;
+    }else{
+phase="welcome";
+  }
+  }else{
+phase="welcome";
+  }
 }
 void pages(int p){
-
+if(p==1){
+    l1=l1+abs(0.8-l1)*0.3;
+    
+    l2=l2-abs(0-l2)*0.3;
+    l3=l3-abs(0-l3)*0.3;
+    l4=l4-abs(0-l4)*0.3;
+}else if(p==2){
+    l2=l2+abs(0.8-l2)*0.3;
+    
+    l1=l1-abs(0-l1)*0.3;
+    l3=l3-abs(0-l3)*0.3;
+    l4=l4-abs(0-l4)*0.3;
+}else if(p==3){
+    l3=l3+abs(0.8-l3)*0.3;
+    
+    l1=l1-abs(0-l1)*0.3;
+    l2=l2-abs(0-l2)*0.3;
+    l4=l4-abs(0-l4)*0.3;
+}else if(p==4){
+    l4=l4+abs(0.8-l4)*0.3;
+    
+    l1=l1-abs(0-l1)*0.3;
+    l2=l2-abs(0-l2)*0.3;
+    l3=l3-abs(0-l3)*0.3;
+}
 }
 void backgroundFX(){
 rotate(loopC/1500);
