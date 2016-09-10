@@ -5,7 +5,7 @@ float xl=0.25;
 float loopC=500;
 float loopC1=0;
 int piv,piv1=0;
-int p1=-1,p2=-1,p3=-1,p4=-1;
+int p1=1,p2=1,p3=1,p4=1;
 float l1=0.25,l2=0.25,l3=0.25,l4=0.25;
 float x1=-0.2,x2=-0.2,x3=-0.2,x4=-0.2;
 float y1=0.13,y2=0.33,y3=0.53,y4=0.73;
