@@ -46,12 +46,12 @@ void draw(){
   loopCounter();
   mousePosition();
   background(0);
-  backgroundFX();
   if(k<100){
   k+=1;
   textSize(50);
   text(k,width/2-25,height/2);
   }else{
+  backgroundFX();
   objects();
   if(phase == "welcome"){
   welcome();
@@ -63,10 +63,45 @@ void draw(){
   fill(255);
   textSize(100);
   //-------------------------------------------------<title>
-  text("ZHENG KAI LUN 76"+phase+page,0,0,2000,200);
+  text("ZHENG KAI LUN 77"+phase+page,0,10,2000,200);
   //text("x"+mouseX/width+"y"+mouseY/height,0,100,2000,200);
 }
 void mouseClicked(){
+if(phase=="welcome"){
+if(mouseX<width*0.2){
+    if(mouseY>height*0.13&&mouseY<height*0.23){
+     phase="pages";
+     page=1;
+    }else if(mouseY>height*0.33&&mouseY<height*0.43){
+     phase="pages";
+     page=2;
+    }else if(mouseY>height*0.53&&mouseY<height*0.63){
+     phase="pages";
+     page=3;
+    }else if(mouseY>height*0.73&&mouseY<height*0.83){
+     phase="pages";
+     page=4;
+    }
+  }else{
+  phase="welcome";
+  }
+}else if(phase=="pages"){
+if(mouseX>width*0.9||mouseX<width*0.1||mouseY<height*0.13||mouseY>height*0.93){
+  
+   zx1=zx2=zx3=zx4=-0.2;
+   zy1=0.13;
+   zy2=0.33;
+   zy3=0.53;
+   zy4=0.73;
+   zh1=zh2=zh3=zh4=0.1;
+   zl1=zl2=zl3=zl4=0.25;
+   zt1=zt2=zt3=zt4=0;
+   phase="welcome";
+  
+}
+}
+}
+void mousePressed(){
 if(phase=="welcome"){
 if(mouseX<width*0.2){
     if(mouseY>height*0.13&&mouseY<height*0.23){
