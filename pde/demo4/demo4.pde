@@ -5,6 +5,9 @@ float loopC=500;
 float loopC1=0;
 int piv,piv1=0;
 float l1=0.25,l2=0.25,l3=0.25,l4=0.25;
+float x1=-0.2,x2=-0.2,x3=-0.2,x4=-0.2;
+float y1=0.13,y2=0.33,y3=0.53,y4=0.73;
+float xPos=-0.2,yPos; 
 PFont zombie,fifth;
 
 
@@ -32,13 +35,22 @@ void draw(){
   mousePosition();
   background(0);
   backgroundFX();
+  objects();
   if(phase == "welcome"){
   welcome();
+  }else if(phase=="pages"){
+  
   }
   
   fill(255);
   textSize(100);
   text("ZHENG KAI LUN 48",0,0,2000,200);
+}
+mouseClicked(){
+
+}
+void pages(int p){
+
 }
 void backgroundFX(){
 rotate(loopC/1500);
@@ -53,8 +65,7 @@ void mousePosition(){
   MY=mouseY-(height/2);
 }
 void welcome(){
-  fill(230,200);
-  if(mouseX<width*0.2){
+if(mouseX<width*0.2){
     if(mouseY>height*0.13&&mouseY<height*0.23){
     l1=l1+abs(0.5-l1)*0.3;
     
@@ -91,11 +102,15 @@ void welcome(){
   l3=l3-abs(0.25-l3)*0.3;
   l4=l4-abs(0.25-l4)*0.3;
   }
+}
+void objects(){
+  fill(230,200);
   
-rect(width*-0.2+MX*0.01,height*0.13+MY*0.01,width*l1,height*0.1);
-rect(width*-0.2+MX*0.01,height*0.33+MY*0.01,width*l2,height*0.1);
-rect(width*-0.2+MX*0.01,height*0.53+MY*0.01,width*l3,height*0.1);
-rect(width*-0.2+MX*0.01,height*0.73+MY*0.01,width*l4,height*0.1);
+  
+rect(width*x1+MX*0.01,height*y1+MY*0.01,width*l1,height*0.1);
+rect(width*x2+MX*0.01,height*y2+MY*0.01,width*l2,height*0.1);
+rect(width*x3+MX*0.01,height*y3+MY*0.01,width*l3,height*0.1);
+rect(width*x4+MX*0.01,height*y4+MY*0.01,width*l4,height*0.1);
 
 stroke(10);
 strokeWeight(1);
