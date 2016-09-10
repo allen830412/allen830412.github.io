@@ -47,8 +47,8 @@ void draw(){
   backgroundFX();
   if(k<100){
   k+=1;
-  textSize(100);
-  text(k,width/2,height/2);
+  textSize(50);
+  text(k,width/2-25,height/2);
   }else{
   objects();
   if(phase == "welcome"){
@@ -61,7 +61,7 @@ void draw(){
   fill(255);
   textSize(100);
   //-------------------------------------------------<title>
-  text("ZHENG KAI LUN 70"+phase+page,0,0,2000,200);
+  text("ZHENG KAI LUN 71"+phase+page,0,0,2000,200);
   //text("x"+mouseX/width+"y"+mouseY/height,0,100,2000,200);
 }
 void mouseClicked(){
@@ -105,28 +105,28 @@ if(p==1){
     zh1=0.8;
     zl1=0.8;
     
-    zl2=zl3=zl4=0;
+    zl2=zl3=zl4=-1;
 }else if(p==2){
     zx2=0.1;
     zy2=0.13;
     zh2=0.8;
     zl2=0.8;
     
-    zl1=zl3=zl4=0;
+    zl1=zl3=zl4=-1;
 }else if(p==3){
     zx3=0.1;
     zy3=0.13;
     zh3=0.8;
     zl3=0.8;
     
-    zl2=zl1=zl4=0;
+    zl2=zl1=zl4=-1;
 }else if(p==4){
     zx4=0.1;
     zy4=0.13;
     zh4=0.8;
     zl4=0.8;
     
-    zl2=zl3=zl1=0;
+    zl2=zl3=zl1=-1;
 }
 }
 
