@@ -54,7 +54,8 @@ void draw(){
   fill(255);
   textSize(100);
   //-------------------------------------------------<title>
-  text("ZHENG KAI LUN 59"+phase+page,0,0,2000,200);
+  text("ZHENG KAI LUN 60"+phase+page,0,0,2000,200);
+  text("x"+mouseX+"y"+mouseY,0,0,2000,200);
 }
 void mouseClicked(){
 if(phase=="welcome"){
