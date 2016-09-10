@@ -1,3 +1,4 @@
+int k=0;
 String phase = "welcome"; 
 PImage wave1,wave2,wave3;
 float MX,MY;
@@ -44,17 +45,22 @@ void draw(){
   mousePosition();
   background(0);
   backgroundFX();
+  if(k<1000){
+  k+=1;
+  text(k,width/2,height/2);
+  }else{
   objects();
   if(phase == "welcome"){
   welcome();
   }else if(phase=="pages"){
   pages(page);
   }
+  }
   
   fill(255);
   textSize(100);
   //-------------------------------------------------<title>
-  text("ZHENG KAI LUN 68"+phase+page,0,0,2000,200);
+  text("ZHENG KAI LUN 69"+phase+page,0,0,2000,200);
   //text("x"+mouseX/width+"y"+mouseY/height,0,100,2000,200);
 }
 void mouseClicked(){
