@@ -54,7 +54,22 @@ canvas.wide { width:100%; height:300px; }
 <script type="text/javascript" src="js/jprocessingjs-0.9.min.js"></script>
 <script type="text/javascript" src="js/processing-1.4.1.min.js"></script>
 <script type="text/javascript">
-
+$(document).ready(function(){
+    function pa1(){
+        $('.page-1').removeClass("hidden").addClass("visible");
+    }
+    function pa2(){
+        $('.page-2').removeClass("hidden").addClass("visible");
+    }
+    function pa3(){
+        $('.page-3').removeClass("hidden").addClass("visible");
+    }
+    function pa4(){
+        $('.page-4').removeClass("hidden").addClass("visible");
+    }
+       
+        });
+   
 </script>
 
 </head>
@@ -63,22 +78,30 @@ canvas.wide { width:100%; height:300px; }
 
 <canvas id="demo" data-processing-sources="pde/demo4/demo4.pde"></canvas>
 <div class="welcome-1">
-<button type="button" class="butt"></button>
+<button type="button" class="butt" onclick="pa1()"></button>
 </div>
 <div class="welcome-2">
-<button type="button" class="butt"></button>
+<button type="button" class="butt" onclick="pa2()"></button>
 </div>
 <div class="welcome-3">
-<button type="button" class="butt"></button>
+<button type="button" class="butt" onclick="pa3()"></button>
 </div>
 <div class="welcome-4">
-<button type="button" class="butt"></button>
+<button type="button" class="butt" onclick="pa4()"></button>
 </div>
 
-<div class="page-1"></div>
-<div class="page-2"></div>
-<div class="page-3"></div>
-<div class="page-4"></div>
+<div class="page-1" hidden>
+about me
+</div>
+<div class="page-2" hidden>
+sound
+</div>
+<div class="page-3" hidden>
+installations
+</div>
+<div class="page-4" hidden>
+contact
+</div>
 <!-- <div class="overlay"></div> -->
 	
 </body>
