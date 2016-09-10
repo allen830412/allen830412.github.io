@@ -36,6 +36,7 @@ void setup(){
 //-----------------------------------------------<draw>
 void draw(){
   loopCounter();
+  whether();
   mousePosition();
   background(0);
   backgroundFX();
@@ -49,7 +50,7 @@ void draw(){
   fill(255);
   textSize(100);
   //-------------------------------------------------<title>
-  text("ZHENG KAI LUN 53"+phase+page,0,0,2000,200);
+  text("ZHENG KAI LUN 54"+phase+page,0,0,2000,200);
 }
 void mouseClicked(){
 if(mouseX<width*0.2){
