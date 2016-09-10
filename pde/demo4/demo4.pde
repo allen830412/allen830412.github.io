@@ -47,7 +47,7 @@ void draw(){
   fill(255);
   textSize(100);
   //-------------------------------------------------<title>
-  text("ZHENG KAI LUN 50",0,0,2000,200);
+  text("ZHENG KAI LUN 51"+phase+page,0,0,2000,200);
 }
 void mouseClicked(){
 if(mouseX<width*0.2){
@@ -82,27 +82,27 @@ void pages(int p){
 if(p==1){
     l1=l1+abs(0.8-l1)*0.3;
     
-    l2=l2-abs(0-l2)*0.3;
-    l3=l3-abs(0-l3)*0.3;
-    l4=l4-abs(0-l4)*0.3;
+    l2=l2-abs(0.1-l2)*0.3;
+    l3=l3-abs(0.1-l3)*0.3;
+    l4=l4-abs(0.1-l4)*0.3;
 }else if(p==2){
     l2=l2+abs(0.8-l2)*0.3;
     
-    l1=l1-abs(0-l1)*0.3;
-    l3=l3-abs(0-l3)*0.3;
-    l4=l4-abs(0-l4)*0.3;
+    l1=l1-abs(0.1-l1)*0.3;
+    l3=l3-abs(0.1-l3)*0.3;
+    l4=l4-abs(0.1-l4)*0.3;
 }else if(p==3){
     l3=l3+abs(0.8-l3)*0.3;
     
-    l1=l1-abs(0-l1)*0.3;
-    l2=l2-abs(0-l2)*0.3;
-    l4=l4-abs(0-l4)*0.3;
+    l1=l1-abs(0.1-l1)*0.3;
+    l2=l2-abs(0.1-l2)*0.3;
+    l4=l4-abs(0.1-l4)*0.3;
 }else if(p==4){
     l4=l4+abs(0.8-l4)*0.3;
     
-    l1=l1-abs(0-l1)*0.3;
-    l2=l2-abs(0-l2)*0.3;
-    l3=l3-abs(0-l3)*0.3;
+    l1=l1-abs(0.1-l1)*0.3;
+    l2=l2-abs(0.1-l2)*0.3;
+    l3=l3-abs(0.1-l3)*0.3;
 }
 }
 void backgroundFX(){
