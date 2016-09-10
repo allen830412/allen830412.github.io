@@ -54,8 +54,8 @@ void draw(){
   fill(255);
   textSize(100);
   //-------------------------------------------------<title>
-  text("ZHENG KAI LUN 60"+phase+page,0,0,2000,200);
-  text("x"+mouseX+"y"+mouseY,0,0,2000,200);
+  text("ZHENG KAI LUN 61"+phase+page,0,0,2000,200);
+  //text("x"+mouseX/width+"y"+mouseY/height,0,100,2000,200);
 }
 void mouseClicked(){
 if(phase=="welcome"){
@@ -77,8 +77,8 @@ if(mouseX<width*0.2){
   phase="welcome";
   }
 }else if(phase=="pages"){
-if(mouseX>width*0.9||mouseX<0.1){
-  if(mouseY<0.13||mouseY>0.93){
+if(mouseX>width*0.9||mouseX<width*0.1){
+  if(mouseY<height*0.13||mouseY>height*0.93){
    zx1=zx2=zx3=zx4=-0.2;
    zy1=0.13;
    zy2=0.33;
