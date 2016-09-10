@@ -40,10 +40,10 @@ void setup(){
 // Main draw loop
 //-----------------------------------------------<draw>
 void draw(){
-  backgroundFX();
   loopCounter();
   mousePosition();
   background(0);
+  backgroundFX();
   objects();
   if(phase == "welcome"){
   welcome();
@@ -54,7 +54,7 @@ void draw(){
   fill(255);
   textSize(100);
   //-------------------------------------------------<title>
-  text("ZHENG KAI LUN 64"+phase+page,0,0,2000,200);
+  text("ZHENG KAI LUN 65"+phase+page,0,0,2000,200);
   //text("x"+mouseX/width+"y"+mouseY/height,0,100,2000,200);
 }
 void mouseClicked(){
