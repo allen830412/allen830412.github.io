@@ -210,7 +210,7 @@ rect(width*x4+MX*0.01,height*y4+MY*0.01,width*l4,height*h4);
 stroke(10);
 strokeWeight(1);
 textFont(fifth);
-textSize(height*0.8);
+textSize(height*0.08);
 
 fill(240);
 text("About me",width*(x1+l1+t1)+MX*0.01,height*(y1+0.1)+MY*0.01);
