@@ -63,7 +63,7 @@ void draw(){
   fill(255);
   textSize(100);
   //-------------------------------------------------<title>
-  text("ZHENG KAI LUN 73"+phase+page,0,0,2000,200);
+  text("ZHENG KAI LUN 74"+phase+page,0,0,2000,200);
   //text("x"+mouseX/width+"y"+mouseY/height,0,100,2000,200);
 }
 void mouseClicked(){
@@ -131,7 +131,7 @@ if(p==1){
     zy4=0.13;
     zh4=0.8;
     zl4=0.8;
-    zt3=-0.22;
+    zt4=-0.22;
     
     zl2=zl3=zl1=-1;
 }
@@ -210,7 +210,7 @@ rect(width*x4+MX*0.01,height*y4+MY*0.01,width*l4,height*h4);
 stroke(10);
 strokeWeight(1);
 textFont(fifth);
-textSize(height*0.08);
+textSize(height*0.1);
 
 fill(240);
 text("About me",width*(x1+l1+t1)+MX*0.01,height*(y1+0.1)+MY*0.01);
