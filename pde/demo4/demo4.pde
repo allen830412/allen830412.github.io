@@ -249,10 +249,10 @@ g4=g4+(zg4-g4)*0.3;
 
 fill(230,200);
  
-rect(width*x1+MX*0.01,height*y1+MY*0.01,width*l1,height*h1);
-rect(width*x2+MX*0.01,height*y2+MY*0.01,width*l2,height*h2);
-rect(width*x3+MX*0.01,height*y3+MY*0.01,width*l3,height*h3);
-rect(width*x4+MX*0.01,height*y4+MY*0.01,width*l4,height*h4);
+rect(width*x1,height*y1,width*l1,height*h1);
+rect(width*x2,height*y2,width*l2,height*h2);
+rect(width*x3,height*y3,width*l3,height*h3);
+rect(width*x4,height*y4,width*l4,height*h4);
 
 stroke(10);
 strokeWeight(1);
