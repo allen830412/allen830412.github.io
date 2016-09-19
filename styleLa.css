@@ -41,16 +41,16 @@ background-color:transparent; opacity:1; padding-left:5%; overflow:scroll; paddi
 }
 
 .edge-1{ position:absolute; top:0%; left:0%; width:10%; height:100%; 
-background-color:red; opacity:0.8; 
+background-color:transparent; opacity:0.8; 
 }
 .edge-2{ position:absolute; top:0%; right:0%; width:10%; height:100%; 
-background-color:red; opacity:0.8; 
+background-color:transparent; opacity:0.8; 
 }
 .edge-3{ position:absolute; top:0%; left:0%; width:100%; height:13%; 
-background-color:red; opacity:0.8; 
+background-color:transparent; opacity:0.8; 
 }
 .edge-4{ position:absolute; bottom:0%; left:0%; width:100%; height:7%; 
-background-color:red; opacity:0.8; 
+background-color:transparent; opacity:0.8; 
 }
 
 canvas { margin:0; padding:0; }
