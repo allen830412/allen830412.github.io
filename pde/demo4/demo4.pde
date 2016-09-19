@@ -181,7 +181,7 @@ if(p==1){
 
 void backgroundFX(){
 rotate(loopC/1500);
-image(wave2,-100-MX*0.005,-3600-MY*0.005,4000+loopC*1.9,8000+loopC1*1.9);
+image(wave2,-100-MX*0.015,-3600-MY*0.015,4000+loopC*1.9,8000+loopC1*1.9);
 rotate(-loopC/750);
 image(wave3,-2400-MX*0.005,-3600-MY*0.005,4000+loopC*1.9,8000+loopC1*1.9);
 rotate(loopC/750);
