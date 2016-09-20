@@ -21,6 +21,34 @@ $(document).ready(function(){
         document.getElementById('l4').disabled=false;
 
  });
+$$('welcome-1', 'welcome-2','welcome-3','welcome-4','edge-1','edge-2','edge-3','edge-4');
+
+$$('welcome-1').tap(function() {
+    pa1();
+});
+$$('welcome-2').tap(function() {
+    pa2();
+});
+$$('welcome-3').tap(function() {
+    pa3();
+});
+$$('welcome-4').tap(function() {
+    pa4();
+});
+
+$$('edge-1').tap(function() {
+    back();
+});
+$$('edge-2').tap(function() {
+    back();
+});
+$$('edge-3').tap(function() {
+    back();
+});
+$$('edge-4').tap(function() {
+    back();
+});
+
     function pa1(){
         $('.page-1').fadeIn(2000);
         $('.edge-1').show();
