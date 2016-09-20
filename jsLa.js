@@ -21,37 +21,53 @@ $(document).ready(function(){
         document.getElementById('l4').disabled=false;
 
  });
-$$('.welcome-1', '.welcome-2','.welcome-3','.welcome-4','.edge-1','.edge-2','.edge-3','.edge-4');
+//$$('.welcome-1', '.welcome-2','.welcome-3','.welcome-4','.edge-1','.edge-2','.edge-3','.edge-4');
 
-$$('.welcome-1').tap(function() {
+$('.welcome-1').swipe({
+    tap: function(event, target){
     alert("wwwwwww");
     pa1();
+    }
 });
-$$('.welcome-2').tap(function() {
+$('.welcome-2').swipe({
+    tap: function(event, target){
     pa2();
+    }
 });
-$$('.welcome-3').tap(function() {
+$('.welcome-3').swipe({
+    tap: function(event, target){
     pa3();
+    }
 });
-$$('.welcome-4').tap(function() {
+$('.welcome-4').swipe({
+    tap: function(event, target){
     pa4();
+    }
 });
 
-$$('.edge-1').tap(function() {
+$('.edge-1').swipe({
+    tap: function(event, target){
     back();
+    }
 });
-$$('.edge-2').tap(function() {
+$('.edge-2').swipe({
+    tap: function(event, target){
     back();
+    }
 });
-$$('.edge-3').tap(function() {
+$('.edge-3').swipe({
+    tap: function(event, target){
     back();
+    }
 });
-$$('.edge-4').tap(function() {
+$('.edge-4').swipe({
+    tap: function(event, target){
     back();
+    }
 });
 
     function pa1(){
-        alert("88888");
+        //alert("88888");
         $('.page-1').fadeIn(2000);
         $('.edge-1').show();
         $('.edge-2').show();
