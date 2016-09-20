@@ -25,7 +25,7 @@ $(document).ready(function(){
  $(function() {  
 $('#l1').swipe({
     tap: function(event, target){
-    alert("wwwwwww");
+    //alert("wwwwwww");
     pa1();
     }
 });
