@@ -23,44 +23,44 @@ $(document).ready(function(){
  });
 //$$('.welcome-1', '.welcome-2','.welcome-3','.welcome-4','.edge-1','.edge-2','.edge-3','.edge-4');
 
-$('.welcome-1').swipe({
+$('#l1').swipe({
     tap: function(event, target){
     alert("wwwwwww");
     pa1();
     }
 });
-$('.welcome-2').swipe({
+$('#l2').swipe({
     tap: function(event, target){
     pa2();
     }
 });
-$('.welcome-3').swipe({
+$('#l3').swipe({
     tap: function(event, target){
     pa3();
     }
 });
-$('.welcome-4').swipe({
+$('#l4').swipe({
     tap: function(event, target){
     pa4();
     }
 });
 
-$('.edge-1').swipe({
+$('#b1').swipe({
     tap: function(event, target){
     back();
     }
 });
-$('.edge-2').swipe({
+$('#b2').swipe({
     tap: function(event, target){
     back();
     }
 });
-$('.edge-3').swipe({
+$('#b3').swipe({
     tap: function(event, target){
     back();
     }
 });
-$('.edge-4').swipe({
+$('#b4').swipe({
     tap: function(event, target){
     back();
     }
