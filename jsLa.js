@@ -22,7 +22,7 @@ $(document).ready(function(){
 
  });
 //$$('.welcome-1', '.welcome-2','.welcome-3','.welcome-4','.edge-1','.edge-2','.edge-3','.edge-4');
-
+ $(function() {  
 $('#l1').swipe({
     tap: function(event, target){
     alert("wwwwwww");
@@ -65,6 +65,8 @@ $('#b4').swipe({
     back();
     }
 });
+});
+
 
     function pa1(){
         //alert("88888");
