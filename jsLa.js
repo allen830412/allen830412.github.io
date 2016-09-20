@@ -51,6 +51,7 @@ $$('.edge-4').tap(function() {
 });
 
     function pa1(){
+        alert("88888");
         $('.page-1').fadeIn(2000);
         $('.edge-1').show();
         $('.edge-2').show();
